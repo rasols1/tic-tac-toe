@@ -212,4 +212,9 @@ const Checkersboard = ({ reset, setReset, winner, setWinner }) => {
 }
 
 
+
+
+
+
+
 export default Checkersboard;
