@@ -4,12 +4,9 @@ import "./css/app.css";
 import { useState } from 'react';
 
 
-		<h1>Tic Tac Toe</h1>
-	
-
 export default function Game() {
 
-	
+
 	const [reset, setReset] = useState(false);
 
 	
@@ -20,6 +17,7 @@ export default function Game() {
 	}
 
 	return (
+
 		<div className="App">
 			{}
 			<div className={`winner ${winner !== '' ? '' : 'shrink'}`}>

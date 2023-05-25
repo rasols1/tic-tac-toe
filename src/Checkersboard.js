@@ -1,4 +1,4 @@
-import "./css/board.css";
+/*import "./css/checkersboard.css";
 
 import { useState, useEffect, useRef } from "react";
 
@@ -8,7 +8,10 @@ const Checkersboard = ({ reset, setReset, winner, setWinner }) => {
 
 
 	const [data, setData] = useState(['', '', '', '', '',
-		'', '', '', ''])
+		'', '', '', '', '','', '', '', '', '',
+		'', '', '', '', '','', '', '', '', '',
+		'', '', '', '', '','', '', '', '', '',
+		'', '', '', '', '','',''])
 
 	const boardRef = useRef(null);
 
@@ -30,11 +33,15 @@ const Checkersboard = ({ reset, setReset, winner, setWinner }) => {
 
 	useEffect(() => {
 
-		setData(['', '', '', '', '', '', '', '', '']);
+		setData(['', '', '', '', '',
+		'', '', '', '', '','', '', '', '', '',
+		'', '', '', '', '','', '', '', '', '',
+		'', '', '', '', '','', '', '', '', '',
+		'', '', '', '', '','','']);
 
 		const cells = boardRef.current.children
 
-		for (let i = 0; i < 9; i++) {
+		for (let i = 0; i < 42; i++) {
 			cells[i].innerText = '';
 		}
 
@@ -49,7 +56,7 @@ const Checkersboard = ({ reset, setReset, winner, setWinner }) => {
 
 		const checkRow = () => {
 			let ans = false;
-			for (let i = 0; i < 9; i += 3) {
+			for (let i = 0; i < 42; i += 4) {
 				ans |= (data[i] === data[i + 1] &&
 				data[i] === data[i + 2] &&
 				data[i] !== '')
@@ -59,7 +66,7 @@ const Checkersboard = ({ reset, setReset, winner, setWinner }) => {
 
 		const checkCol = () => {
 			let ans = false;
-			for (let i = 0; i < 3; i++) {
+			for (let i = 0; i < 4; i++) {
 				ans |= (data[i] === data[i + 3] &&
 				data[i] === data[i + 6] &&
 				data[i] !== '')
@@ -102,7 +109,7 @@ const Checkersboard = ({ reset, setReset, winner, setWinner }) => {
 	})
 
 	return (
-		<div ref={boardRef} className="board">
+		<div ref={boardRef} className="checkersboard">
 			<div className="input input-1"
 				onClick={(e) => draw(e, 1)}></div>
 			<div className="input input-2"
@@ -217,4 +224,4 @@ const Checkersboard = ({ reset, setReset, winner, setWinner }) => {
 
 
 
-export default Checkersboard;
+export default Checkersboard;*/

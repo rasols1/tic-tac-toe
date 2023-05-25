@@ -8,9 +8,9 @@ function Navbar() {
 	return (
 		<>
 		<nav className="navbar">
-			<p></p>
+			<h1>RasGames</h1>
 			<Link to="/">Tic Tac Toe</Link>
-			<Link to="Checkers">Checkers</Link>   
+			<Link to="ConnectFour">ConnectFour</Link>  
 		</nav>
 		</>
 	)

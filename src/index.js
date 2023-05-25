@@ -5,7 +5,18 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './css/index.css';
 import Layout from './App';
 import Game from './Game';
-import Checkers from './Checkers';
+import ConnectFour from './ConnectFour';
+/*
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);*/
+
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
 
 function App(){
 	return(
@@ -14,7 +25,8 @@ function App(){
 		<Routes>
 		  <Route path="/" element={<Layout />}>
 			<Route index element={<Game />} />
-			<Route path="*" element={<Checkers />} />
+			<Route path="*" element={<ConnectFour />} />
+			
 		  </Route>
 		</Routes>
 	  </BrowserRouter>

@@ -1,5 +1,5 @@
-@import url(
-'https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 
 
 .Game.h1{
@@ -8,6 +8,8 @@
 
 
 .App{
+	text-align: center;
+	font-family: 'Roboto', serif;
 	width: 100vw;
 	height: 100vh;
 	display: flex;
@@ -20,6 +22,7 @@
 }
 
 .winner {
+	font-family: 'Roboto', serif;
 	transition: all ease-in .3s;
 	display: flex;
 	opacity: 1;
@@ -34,7 +37,7 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -70%);
-	background-color: rgba(195, 141, 158, 0.863);
+	background-color: rgba(237, 107, 139, 0.268);
 	backdrop-filter: 5px;
 	padding: .5rem;
 	padding-bottom: 1rem;
@@ -46,7 +49,7 @@
 	font-weight: 600;
 	font-size: 2.5rem;
 	color: white;
-	font-family: 'Bellefair', serif;
+	font-family: 'Roboto', serif;
 	position:relative;
 	text-align: center;
 	line-height:1.3;
@@ -64,7 +67,7 @@ button {
 	color: #FFFFFF;
 	cursor: pointer;
 	flex: 0 0 auto;
-	font-family: "Inter var";
+	font-family: 'Roboto', serif;
 	font-size: 1.125rem;
 	font-weight: 600;
 	line-height: 1.5rem;

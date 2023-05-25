@@ -4,5 +4,7 @@
     display: flex;
 	justify-content: center;
     gap: 10px;
-    color: black;
+    color: white;
+    background-color: #101010;
 }
+

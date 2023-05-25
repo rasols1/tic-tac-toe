@@ -1,26 +1,35 @@
-import {Outlet, } from "react-router-dom";
-import "./css/app.css";
+/*
+import Checkersboard from "./Checkersboard";
+import Info from "./Info";
+import { useState, useEffect, useRef } from "react";
 
-function Hej() {
- 
-	return (
-		<>
-		<h1>hej</h1>
-		</>
-	)
+export default function Checkers() {
+
+	
+	const [reset, setReset] = useState(false);
+
+	
+	const [winner, setWinner] = useState('');
+
+	const resetBoard = () => {
+		setReset(true);
 	}
 
-
-
-
-
-function Checkers(){
-    return(
-      <>
-        <Hej />
-        <Outlet />
-        
-      </>
-    );}
-
-export default Checkers;
+	return (
+		<div className="App">
+			{}
+			<div className={`winner ${winner !== '' ? '' : 'shrink'}`}>
+				{}
+				<div className='winner-text'>{winner}</div>
+				{}
+				<button onClick={() => resetBoard()}>
+					Reset Board
+				</button>
+			</div>
+			{}
+			<Checkersboard reset={reset} setReset={setReset} winner={winner}
+				setWinner={setWinner} />
+			<Info />
+		</div>
+	);
+}*/
